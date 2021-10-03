@@ -10,32 +10,25 @@
     height: 100vh;
 }
 
-.header{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(69, 69, 126);
-    border-bottom: 1px solid rgb(212, 209, 209);
-    color: seashell;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-radius: 10px;
-}
-
 table{
     width: 100%;
     border: 2px solid rgb(69, 69, 126);
     border-collapse: collapse;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 th,td{
     padding: 15px;
 }
 
+tr{
+    height: 30px;
+}
+
 th{
-    height: 70px;
-    border-bottom: 3px rgba(212, 209, 209,0.5);
+    height: 30px;
+    border-bottom: 3px rgba(212, 209, 209,0.7);
+    font-size: 30px;
 }
 
 
@@ -47,4 +40,33 @@ td{
 
 .content:hover{
     background-color: rgba(212, 209, 209,0.5);
+}
+
+tr{
+    border: 1px solid;
+    padding: 1px;
+    text-align: justify;
+    opacity: 0.8;
+}
+
+td li{
+    color: gray;
+    list-style: none;
+    display: inline-flex;
+}
+
+li:hover{
+    color: blue;
+}
+td li #edit{
+    visibility: hidden;
+}
+
+td li #edit:hover{
+    visibility: visible;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
 }
